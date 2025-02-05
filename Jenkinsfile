@@ -16,14 +16,14 @@ pipeline {
                 sh 'npm test'
              }
        }
-      post {
-            success {
-                 echo "✅ Build and deployment successful!"
-            }
-           failure {
-                 echo "❌ Build failed!"
-           }
-       } 
-    }
+   }
+   post {
+         success {
+               echo "✅ Build and deployment successful!"
+         }
+         failure {
+               echo "❌ Build failed!"
+         }
+   } 
 }
 
