@@ -41,6 +41,7 @@
     "husky": "^9.1.6",
     "tempy": "^3.1.0",
     "tsx": "^4.19.1",
+    "braces": "1.8.5",
     "type-fest": "^4.26.1",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.6.0"
