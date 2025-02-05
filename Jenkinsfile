@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Susmita-code007/json-server/tree/sm_hack'
+                git 'https://github.com/Susmita-code007/json-server'
             }
         }
 
