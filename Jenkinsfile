@@ -16,6 +16,14 @@ pipeline {
                 sh 'npm test'
              }
        }
+       stage('Check Dependencies') {
+            steps {
+                echo "🔍 Checking for missing dependencies..."
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    sh './check_packages.sh vulnerable_packages.json'
+                }
+            }
+       }
    }
    post {
          success {
